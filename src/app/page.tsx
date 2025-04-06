@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 export default function Home() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-white to-gray-50 dark:from-gray-900 dark:to-gray-800">
@@ -10,7 +8,7 @@ export default function Home() {
             Transform Your Business with Digital Marketing
           </h1>
           <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-8">
-            Evolve your brand's online presence with our comprehensive digital marketing solutions
+            Evolve your brand&apos;s online presence with our comprehensive digital marketing solutions
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button className="px-8 py-3 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition-colors font-medium">
@@ -66,7 +64,7 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-8">
             <div className="p-6 rounded-xl bg-white dark:bg-gray-800 shadow-lg">
               <h3 className="text-xl font-semibold mb-4">Search Engine Optimization (SEO)</h3>
-              <p className="text-gray-600 dark:text-gray-300 mb-4">Improve your website's visibility in search results and drive organic traffic</p>
+              <p className="text-gray-600 dark:text-gray-300 mb-4">Improve your website&apos;s visibility in search results and drive organic traffic</p>
               <ul className="space-y-2 text-gray-600 dark:text-gray-300">
                 <li className="flex items-center">
                   <svg className="w-5 h-5 mr-2 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -168,7 +166,7 @@ export default function Home() {
       <section className="container mx-auto px-4 py-20">
         <div className="max-w-3xl mx-auto text-center bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-12 text-white">
           <h2 className="text-3xl font-bold mb-4">Ready to Grow Your Business?</h2>
-          <p className="text-xl mb-8 opacity-90">Let's discuss how we can help you achieve your digital marketing goals</p>
+          <p className="text-xl mb-8 opacity-90">Let&apos;s discuss how we can help you achieve your digital marketing goals</p>
           <button className="px-8 py-3 bg-white text-blue-600 rounded-full hover:bg-gray-100 transition-colors font-medium">
             Schedule a Free Consultation
           </button>
