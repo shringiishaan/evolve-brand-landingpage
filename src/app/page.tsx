@@ -35,20 +35,24 @@ export default function Home() {
             transition={{ duration: 0.8, delay: 0.6 }}
             className="flex flex-col sm:flex-row gap-4 justify-center"
           >
-            <motion.button 
+            <motion.a 
+              href="https://wa.me/918200641202"
+              target="_blank"
+              rel="noopener noreferrer"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="px-8 py-3 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition-colors font-medium"
             >
-              Get Started
-            </motion.button>
-            <motion.button 
+              Chat on WhatsApp
+            </motion.a>
+            <motion.a 
+              href="mailto:m.vivek0089@gmail.com"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="px-8 py-3 border border-gray-300 dark:border-gray-600 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors font-medium"
             >
-              Book a Consultation
-            </motion.button>
+              Send Email
+            </motion.a>
           </motion.div>
         </motion.div>
       </section>
@@ -219,17 +223,29 @@ export default function Home() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.4 }}
-            className="text-xl mb-8 opacity-90"
+            className="text-xl mb-4 opacity-90"
           >
             Let&apos;s discuss how we can help you achieve your digital marketing goals
           </motion.p>
-          <motion.button 
+          <motion.p 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.6 }}
+            className="text-lg mb-8 opacity-90"
+          >
+            Contact Vivek Mishra, CEO & Founder
+          </motion.p>
+          <motion.a 
+            href="https://wa.me/918200641202"
+            target="_blank"
+            rel="noopener noreferrer"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="px-8 py-3 bg-white text-blue-600 rounded-full hover:bg-gray-100 transition-colors font-medium"
+            className="inline-block px-8 py-3 bg-white text-blue-600 rounded-full hover:bg-gray-100 transition-colors font-medium"
           >
-            Schedule a Free Consultation
-          </motion.button>
+            Chat on WhatsApp
+          </motion.a>
         </motion.div>
       </section>
     </div>
