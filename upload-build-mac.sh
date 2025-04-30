@@ -50,7 +50,7 @@ print_success "PEM file found"
 
 # Check if build directory exists
 print_step "Checking build directory"
-if [ ! -d "./build" ]; then
+if [ ! -d "./out" ]; then
     print_error "Build directory not found. Please run 'npm run build' first"
 fi
 print_success "Build directory found"
