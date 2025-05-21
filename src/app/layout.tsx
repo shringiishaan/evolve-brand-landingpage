@@ -31,7 +31,7 @@ export default function RootLayout({
         <script 
           src="https://app.fassix.com/chatbot.js" 
           async 
-          fassix-key="03bf9301-b8f0-4d1a-89f9-e264f00eb933"
+          fassix-key="ec2aaa29-3c81-4445-b0b3-d78ada711734"
         />
       </body>
     </html>
