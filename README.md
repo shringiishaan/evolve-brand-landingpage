@@ -111,12 +111,12 @@ evolve-brand-landingpage/
 
 2. Install dependencies:
    ```bash
-   npm install
+   pnpm install
    ```
 
 3. Run the development server:
    ```bash
-   npm run dev
+   pnpm dev
    ```
 
 4. Open [http://localhost:3000](http://localhost:3000) in your browser.
@@ -125,12 +125,12 @@ evolve-brand-landingpage/
 
 1. Build the application:
    ```bash
-   npm run build
+   pnpm build
    ```
 
 2. Start the production server:
    ```bash
-   npm start
+   pnpm start
    ```
 
 ## 🔧 Configuration
@@ -147,6 +147,35 @@ The project uses a custom Tailwind configuration for:
 - Font families
 - Responsive breakpoints
 - Dark mode support
+
+## 📦 GitHub Pages Deployment
+
+This project is configured for static export and GitHub Pages.
+
+- Static export: configured via `next.config.ts` with `output: "export"` and `trailingSlash: true`.
+- GitHub Pages folder: uses `docs/` on the `main` branch.
+- Base path: set `NEXT_PUBLIC_BASE_PATH` when building for a user/organization pages path (defaults to `/evolve-brand-landingpage`).
+
+### Steps
+```bash
+corepack enable
+corepack use pnpm@10.14.0
+pnpm install
+pnpm run build:pages  # Exports to docs/ with index.html
+# Commit and push
+git add docs/
+git commit -m "chore: build static site for GitHub Pages"
+git push origin main
+```
+
+In repository settings, set GitHub Pages:
+- Source: Deploy from a branch
+- Branch: `main` / Folder: `docs`
+
+If your repository name differs, build with a custom base path:
+```bash
+NEXT_PUBLIC_BASE_PATH=/your-repo-name pnpm run build:pages
+```
 
 ## 📝 Customization
 
